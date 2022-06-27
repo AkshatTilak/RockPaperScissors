@@ -1,6 +1,9 @@
 var rounds = 5;
 var playerScore = 0;
 var comScore = 0;
+document.getElementById('roundNum').innerHTML = rounds;
+document.getElementById('playerScore').innerHTML = playerScore;
+document.getElementById('comScore').innerHTML = comScore;
 
 function computerPlay(){
     var max = 3;
