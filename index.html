@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="rpcScript.js"></script>
+    <script src="rpcScript.js">window.onload</script>
     <title>Document</title>
 </head>
 <body>
@@ -18,19 +18,19 @@
         (who has radomly generated outputs) to find out who is the champion
         of the RPC LEAGUE.
     </p>
-    <div class= "rounds">Rounds Left :</div> 
+    <div class= "rounds" > ROUNDS LEFT : <div id="roundNum"></div></div> 
     <div class= "mainAction">
-    <div class= "score">Your Score</div>
+    <div class= "score" > ROUNDS LEFT : <div id="playerScore"></div></div> 
     <div class= "selection">
-        <button><img src="./images/rock-576669_1280.png" alt = "ROCK"></button>
-        <button><img src="./images/certificate-154169_1280.png" alt = "PAPER"></button>
-        <button><img src="./images/scissors-2702564_1280.png" alt = "SCISSORS"></button>
+        <button value="ROCK" onclick='play("ROCK",computerPlay());'><img src="./images/rock-576669_1280.png" alt = "ROCK"></button>
+        <button value="PAPER" onclick='play("PAPER",computerPlay())'><img src="./images/certificate-154169_1280.png" alt = "PAPER"></button>
+        <button value="SCISSOR" onclick='play("SCISSOR",computerPlay());'><img src="./images/scissors-2702564_1280.png" alt = "SCISSORS"></button>
     </div>
-    <div class= "score">Computer Score</div>
+    <div class= "score" > ROUNDS LEFT : <div id="comScore"></div></div>
     </div>
     <div class="result">
         <h2>THIS ROUND GOES TO</h2>
-        <p></p>
+        <p id="output"></p>
     </div>
 </body>
 </html>
